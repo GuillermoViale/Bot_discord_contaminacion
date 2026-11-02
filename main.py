@@ -49,7 +49,7 @@ async def contaminacion_imagen(ctx):
     await ctx.send(file=picture)
 
 @bot.command()
-async def reciclje(ctx):
+async def reciclaje(ctx):
     await ctx.send("El reciclaje es el proceso de recolectar, tratar "
     "y transformar materiales usados (como papel, cartón, vidrio, plástico y metales)"
     " para convertirlos en nueva materia prima o producto útil.")
