@@ -1,9 +1,8 @@
 import os
-from random import random
+import random
 
 import discord
 from discord.ext import commands
-import requests
 import requests
 
 intents = discord.Intents.default()
@@ -46,9 +45,7 @@ async def contaminacion_imagen(ctx):
     archivos = os.listdir('imagenes')
     foto = random.choice(archivos)
     with open(f'imagenes/{foto}', 'rb') as f:
-        # ¡Vamos a almacenar el archivo de la biblioteca Discord convertido en esta variable!
         picture = discord.File(f)
-    # A continuación, podemos enviar este archivo como parámetro.
     await ctx.send(file=picture)
 
 @bot.command()
